@@ -1,0 +1,20 @@
+.waySection__top {
+	display: flex;
+	padding-right: 32px;
+	margin-bottom: 24px;
+}
+
+.waySection__buttonsContainer {
+	display: flex;
+	margin-left: auto;
+}
+
+.waySection__buttonsContainer > :first-of-type {
+	margin-right: 8px;
+	transform: rotate(180deg);
+}
+
+.waySection__cardsContainer {
+	display: flex;
+	overflow-x: hidden;
+}

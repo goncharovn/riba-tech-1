@@ -1,0 +1,209 @@
+.topicCard {
+	display: grid;
+	align-items: center;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 2px rgba(0, 32, 51, 0.02), 0px 2px 8px rgba(0, 32, 51, 0.16);
+	border-radius: 8px;
+	background-color: var(--bg-default);
+}
+
+.topicCard_size_large {
+	grid-template-columns: auto 1fr;
+	grid-template-rows: repeat(2, auto);
+	grid-template-areas:
+		"p c"
+		"p b";
+	column-gap: 98px;
+	justify-items: start;
+	padding: 32px 98px;
+}
+
+.topicCard_size_default {
+	grid-template-columns: 1fr auto;
+	grid-template-rows: 1fr auto;
+	grid-template-areas:
+	"c c"
+	"b p";
+	justify-items: start;
+	max-width: 464px;
+	padding: 32px;
+}
+
+.topicCard__progress {
+	grid-area: p;
+}
+
+.progress {
+	position: relative;
+}
+
+.progress_size_default {
+	display: flex;
+	align-items: center;
+}
+
+.progress_size_large {
+	position: relative;
+	width: 154px;
+	height: 154px;
+}
+
+.progress__value {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.progress_size_default .progress__value {
+	flex-direction: row;
+	align-items: center;
+}
+
+.progress_size_default .progress__icon {
+	margin-left: 10px;
+}
+
+.topicCard_size_default .checkIcon {
+	width: 24px;
+	height: 24px;
+}
+
+.topicCard_size_large .checkIcon {
+	width: 154px;
+	height: 154px;
+}
+
+.progress_size_large .progress__value {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.progress__count {
+	color: var(--typo-primary);
+}
+
+.progress_size_default .progress__count {
+	margin-right: 6px;
+	font-size: 14px;
+}
+
+.progress_size_large .progress__count {
+	font-size: 24px;
+}
+
+.progress__text {
+	font-size: 14px;
+	color: var(--typo-secondary);
+}
+
+.progress__icon {
+	display: flex;
+	color: var(--bg-success);
+}
+
+.progress_size_default .progress__icon {
+	width: 24px;
+	height: 24px;
+}
+
+.progress_size_large .progress__icon {
+	width: 154px;
+	height: 154px;
+}
+
+.progress__icon>svg {
+	color: var(--bg-success);
+	transform: rotate(-90deg);
+}
+
+.progress__icon>svg>circle {
+	stroke: currentColor;
+}
+
+.progress__icon>svg>circle:last-of-type {
+	color: var(--bg-success);
+}
+
+.progress__icon>svg>circle:first-of-type {
+	color: var(--bg-ghost);
+}
+
+.topicCard__content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	grid-area: c;
+}
+
+.topicCard_size_default .topicCard__content {
+	margin-bottom: 38px;
+}
+
+.topicCard_size_large .topicCard__content {
+	margin-bottom: 35px;
+}
+
+.topicCard__heading {
+	margin-bottom: 8px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(--typo-primary);
+}
+
+.topicCard_size_default .topicCard__heading {
+	font-size: 24px;
+}
+
+.topicCard_size_large .topicCard__heading {
+	font-size: 32px;
+}
+
+.topicCard__tags {
+	display: flex;
+	font-size: 14px;
+	line-height: 1.5;
+	color: var(--typo-secondary);
+}
+
+.topicCard_size_default .topicCard__tags {
+	margin-bottom: 11px;
+}
+
+.topicCard_size_large .topicCard__tags {
+	margin-bottom: 8px;
+}
+
+.topicCard__tag:not(:first-of-type)::before {
+	content: "•";
+	display: inline-block;
+	margin-right: 8px;
+	margin-left: 8px;
+}
+
+.topicCard__description {
+	line-height: 1.5;
+	color: var(--typo-primary);
+}
+
+.topicCard_size_default .topicCard__description {
+	font-size: 14px;
+}
+
+.topicCard_size_large .topicCard__description {
+	font-size: 16px;
+}
+
+.topicCard__button {
+	grid-area: b;
+}
+
+.waySection__card {
+	flex-shrink: 0;
+}
+
+.waySection__card:not(:last-of-type) {
+	margin-right: 24px;
+}

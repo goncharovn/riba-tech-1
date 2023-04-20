@@ -1,0 +1,26 @@
+
+.recommendSection__cardsContainer {
+	margin-bottom: 24px;
+}
+
+.recommendSection__more {
+	display: flex;
+	align-items: center;
+}
+
+.line {
+	flex-grow: 1;
+	height: 1px;
+	border: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	background-color: var(--bg-border);
+}
+
+.moreButton__text {
+	margin-right: 11px;
+}
+
+.moreButton__img {
+	transform: rotate(90deg);
+}

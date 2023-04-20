@@ -1,0 +1,96 @@
+.header {
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	height: 60px;
+	padding: 0 24px;
+	border-bottom: 1px solid var(--bg-border);
+	background-color: var(--bg-default);
+	font-family: Segoe UI, sans-serif;
+}
+
+.page__heading {
+	margin-right: 36px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.33;
+	color: var(--typo-primary);
+}
+
+.header__nav {
+	height: 100%;
+	font-weight: 400;
+}
+
+.header__navList {
+	display: flex;
+	height: 100%;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+.header__navItem:not(:last-of-type) {
+	margin-right: 32px;
+}
+
+.header__navLink {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	cursor: pointer;
+	color: var(--typo-secondary);
+	transition: color ease-in-out .2s;
+}
+
+.header__navLink_active {
+	color: var(--typo-primary);
+	transition: none;
+}
+
+.header__navLink:hover {
+	color: var(--typo-primary);
+}
+
+.header__navLink_active::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: var(--typo-link);
+}
+
+.header__actions {
+	display: flex;
+	margin-right: 16px;
+	margin-left: auto;
+}
+
+.header__action {
+	display: flex;
+	align-items: center;
+	padding-left: 0;
+	padding-right: 0;
+	border: 0;
+	background: none;
+	cursor: pointer;
+}
+
+.header__action:not(:last-of-type) {
+	margin-right: 8px;
+}
+
+.header__user {
+	display: flex;
+	align-items: center;
+	color: var(--typo-primary);
+	cursor: pointer;
+}
+
+.header__avatar {
+	margin-right: 8px;
+	border-radius: 50%;
+	object-fit: cover;
+}

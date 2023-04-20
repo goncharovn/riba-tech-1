@@ -1,0 +1,35 @@
+@font-face {
+	font-family: Inter;
+	src:
+		local("Inter Regular"),
+		local("Inter-Regular"),
+		url("/assets/fonts/Inter-Regular.ttf") format("truetype");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: Segoe UI;
+	src:
+		local("SegoeUI Regular"),
+		local("SegoeUI-Regular"),
+		url("/assets/fonts/SegoeUI-Regular.ttf") format("truetype");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: Segoe UI;
+	src:
+		local("SegoeUI SemiBold"),
+		local("SegoeUI-SemiBold"),
+		url("/assets/fonts/SegoeUI-SemiBold.ttf") format("truetype");
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: Segoe UI;
+	src:
+		local("SegoeUI Bold"),
+		local("SegoeUI-Bold"),
+		url("/assets/fonts/SegoeUI-Bold.ttf") format("truetype");
+	font-weight: 700;
+}

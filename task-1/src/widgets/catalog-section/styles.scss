@@ -1,0 +1,10 @@
+.catalogSection__choiceGroup {
+	margin-bottom: 24px;
+}
+
+.catalogSection__cardsContainer {
+	display: grid;
+	gap: 24px;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	justify-items: center;
+}

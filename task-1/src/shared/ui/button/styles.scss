@@ -1,0 +1,80 @@
+.button {
+	display: flex;
+	align-items: center;
+	padding-top: 0;
+	padding-bottom: 0;
+	cursor: pointer;
+	font-family: inherit;
+}
+
+.button_form_default {
+	border-radius: 4px;
+}
+
+.button_form_round {
+	border-radius: 50%;
+}
+
+.button_size_s {
+	padding-right: 16px;
+	padding-left: 16px;
+	font-size: 14px;
+	line-height: 2.29;
+}
+
+.button_size_m {
+	padding-right: 20px;
+	padding-left: 20px;
+	font-size: 16px;
+	line-height: 2.5;
+}
+
+.button_view_primary {
+	border: 0;
+	background-color: var(--control-primary-bg);
+	color: var(--control-primary-typo);
+}
+
+.button_view_secondary {
+	border: 1px solid var(--control-primary-bg);
+	background: none;
+	color: var(--control-secondary-typo);
+}
+
+.button_view_ghost {
+	border: 0;
+	color: var(--control-ghost-typo);
+	background-color: var(--control-ghost-bg);
+}
+
+.button_size_m .button__text_leftIcon {
+	margin-left: 14px;
+}
+
+.button_size_m:has(.button__text_leftIcon) {
+	padding-left: 16px;
+}
+
+.button_size_s .button__text_rightIcon {
+	margin-right: 11px;
+}
+
+.button_size_s:has(.button__text_rightIcon) {
+	padding-right: 12px;
+}
+
+.moreButton {
+	padding-right: 12px;
+	margin-right: 7px;
+	margin-left: 7px;
+}
+
+.arrowButton {
+	width: 32px;
+	height: 32px;
+	padding-left: 0;
+	padding-right: 0;
+	background-image: url("/assets/images/arrow.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}

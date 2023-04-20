@@ -1,0 +1,34 @@
+.section {}
+
+.section__heading {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 1.5;
+	color: var(--typo-primary);
+}
+
+.recommendSection {
+	margin-bottom: 40px;
+}
+
+.recommendSection__heading {
+	margin-bottom: 24px;
+}
+
+.waySection {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	padding-left: 32px;
+	border-radius: 8px;
+	margin-bottom: 48px;
+	background-color: var(--bg-stripe);
+}
+
+.waySection__heading {
+	margin-right: 11px;
+	margin-bottom: 0;
+}
+
+.catalogSection__heading {
+	margin-bottom: 16px;
+}
