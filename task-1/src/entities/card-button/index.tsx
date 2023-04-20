@@ -33,7 +33,7 @@ const CardButton: FC<ICardButton> = ({
 			/>
 		)
 	} else if (completedTasks === totalTasks) {
-		const icon = <img src="/assets/images/reload.svg" alt="" />
+		const icon = <img src="./assets/images/reload.svg" alt="" />
 		button = (
 			<Button
 				text="Пройти заново"

@@ -24,18 +24,18 @@ const Header = () => {
 
 			<div className="header__actions">
 				<button className="header__action">
-					<img src="/assets/images/notification.svg" alt="" />
+					<img src="./assets/images/notification.svg" alt="" />
 				</button>
 				<button className="header__action">
-					<img src="/assets/images/question.svg" alt="" />
+					<img src="./assets/images/question.svg" alt="" />
 				</button>
 				<button className="header__action">
-					<img src="/assets/images/sun.svg" alt="" />
+					<img src="./assets/images/sun.svg" alt="" />
 				</button>
 			</div>
 
 			<Link className="header__user" to="/profile">
-				<img className="header__avatar" src="/assets/images/avatar.png" alt="" />
+				<img className="header__avatar" src="./assets/images/avatar.png" alt="" />
 				<span className="header__username">Михаил Романов</span>
 			</Link>
 		</header>

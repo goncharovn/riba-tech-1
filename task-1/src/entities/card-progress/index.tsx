@@ -60,7 +60,7 @@ const CardProgress: FC<ICardProgress> = ({
 		progress = (
 			<img
 				className="checkIcon"
-				src="/assets/images/check.svg"
+				src="./assets/images/check.svg"
 				alt=""
 			/>
 		)
